@@ -1,7 +1,8 @@
 # SwDA-Preprocessing
-## This repo refers to [Switchboard Dialog Act Corpus with Penn Treebank links](https://github.com/cgpotts/swda)
-### The segmentation of train/valid/test refers to [Ji Young Lee*, Franck Dernoncourt*, "Sequential Short-Text Classification with Recurrent and Convolutional Neural Networks". NAACL 2016. (* indicates equal contribution)](https://arxiv.org/abs/1603.03827)
-### The preprocessing rules follow [WS-97 Switchboard DAMSL Coders Manual](https://web.stanford.edu/~jurafsky/ws97/manual.august1.html) to preprocess SwDA dataset
+## Reference
+This repo refers to [Switchboard Dialog Act Corpus with Penn Treebank links](https://github.com/cgpotts/swda)
+The segmentation of train/valid/test refers to [Ji Young Lee*, Franck Dernoncourt*, "Sequential Short-Text Classification with Recurrent and Convolutional Neural Networks". NAACL 2016. \(* indicates equal contribution\)](https://arxiv.org/abs/1603.03827)
+The preprocessing rules follow [WS-97 Switchboard DAMSL Coders Manual](https://web.stanford.edu/~jurafsky/ws97/manual.august1.html) to preprocess SwDA dataset
 There were 220 tags used in the coding; 130 of these occurred less than 10 times each, so for our initial experiments we clustered the 220 tags into 42 larger classes. We did the clustering by removing the secondary carat-dimensions (^2,^g,^m,^r,^e,^q,^d), with 5 exceptions. The exceptions: we left qy^d (Declarative yes-no Questions) , qw^d (Declarative wh-questions) and b^m (Signal-Understanding-via-Mimic), and we folded the few examples of nn^e into ng, and ny^e into na. Then, we grouped together some tags that had very little training data; those tags that appear in the following list were grouped with other tags on the same line.
 ### Tags that do not mention in the manual
 
